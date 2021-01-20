@@ -1,0 +1,39 @@
+{
+  "name": "food-app",
+  "version": "14.3.1",
+  "description": "specific focus on helping IAS candidates in cracking the IAS examinations.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "cross-env NODE_ENV=local node app.js",
+    "lint": "eslint src/",
+    "test": "jest --detectOpenHandles --forceExit --coverage"
+  },
+  "type": "module",
+  "author": "karthik",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "1.4.3",
+    "fastify": "^3.1.1",
+    "fastify-cors": "^3.0.3",
+    "fastify-jwt": "^1.5.0",
+    "fastify-multer": "^2.0.2",
+    "fastify-swagger": "^2.6.0",
+    "joi": "17.1.1",
+    "joi-objectid": "^3.0.1",
+    "joi-to-json": "^1.2.0",
+    "mime": "2.4.4",
+    "moment": "^2.27.0",
+    "mongoose": "^5.8.7"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@types/jest": "^26.0.8",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.3.1",
+    "jest": "^26.2.2",
+    "mongodb-memory-server": "^6.6.3",
+    "nodemon": "^2.0.4"
+  }
+}

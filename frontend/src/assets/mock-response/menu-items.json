@@ -1,0 +1,52 @@
+[
+    {
+        "_id":"6007f2b980bc1e20346f069c",
+        "imageUrl":"https://images.unsplash.com/photo-1562945431-ce2b63d5a7fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80",
+        "itemName":"chocolate donut",
+        "price": 200
+    },
+    {
+        "_id":"6007f3e55185bf8a3f915391",
+        "imageUrl":"https://images.unsplash.com/photo-1587458423887-4f8d224134a9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1249&q=80",
+        "itemName":"pink donut",
+        "price": 150
+
+    },
+    {
+        "_id":"6007f4a6ba0790057e914139",
+        "imageUrl":"https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/lkn0extnvjywfts4q7gw",
+        "itemName":"Chicken Biryani",
+        "price":220
+    },
+    {
+        "_id":"6007f533ee5dde89dcbc529c",
+        "imageUrl":"https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&width=800&height=800",
+        "itemName":"Mutton Biryani",
+        "price":"300"
+    },
+    {
+        "_id":"6007f5c8cd5be3115271f23d",
+        "imageUrl":"https://media1.s-nbcnews.com/i/newscms/2019_21/2870431/190524-classic-american-cheeseburger-ew-207p_d9270c5c545b30ea094084c7f2342eb4.jpg",
+        "itemName":"Burger patty",
+        "price":100
+    },
+    {
+        "_id":"6007f64083c7001f6253ea05",
+        "imageUrl":"https://images.dominos.co.in/new_veggie_paradise.jpg",
+        "itemName":"veg pizza",
+        "price": 250
+    },
+    {
+        "_id":"6007f74df3d655daa7591b97",
+        "imageUrl":"https://static.toiimg.com/thumb/52447240.cms?imgsize=109970&width=800&height=800",
+        "itemName":"Gulab jamun",
+        "price": 150
+    },
+    {
+        "_id":"6007f756f24847ffe7c2f075",
+        "imageUrl": "https://assets.vogue.in/photos/5ed0d754193ac7578d6da887/16:9/w_1920,c_limit/chocolate%20ice%20cream%20homemade%20ice%20cream%20recipes%20recipes%20to%20make%20at%20home%20coffee%20ice%20cream.jpg",
+        "itemName":"Chocolate ice-cream",
+        "price": 100
+    }
+
+]
