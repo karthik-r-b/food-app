@@ -13,17 +13,17 @@ import multer from 'fastify-multer';
 const env = process.env.NODE_ENV;
 
 const app = fastify({
-  logger: true,
+    logger: true,
 });
 
 app.register(multer.contentParser);
 
 app.register(fastifyJwt, {
-  secret: config.jwt.salt,
+    secret: config.jwt.salt,
 });
 
 app.register(fastifyCors, {
-  origin: '*',
+    origin: '*',
 });
 app.setErrorHandler(errorHandlerMiddleware);
 app.register(authuser);
@@ -33,14 +33,14 @@ registerRoutes(app);
 
 // Run the server!
 app.listen(config.port, config.host, function (err, address) {
-  if (err) {
-    app.log.error(err);
-    process.exit(1);
-  }
-  if (env !== 'test') {
-    runDB();
-  }
-  app.log.info(`server listening on ${address}`);
+    if (err) {
+        app.log.error(err);
+        process.exit(1);
+    }
+    if (env !== 'test') {
+        runDB();
+    }
+    app.log.info(`server listening on ${address}`);
 });
 
 export default app;

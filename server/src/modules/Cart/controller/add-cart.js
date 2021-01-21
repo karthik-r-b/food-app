@@ -4,10 +4,10 @@ import cartRepository from '../../../repositories/cart-repository.js';
 import menuItemRepository from '../../../repositories/menu-item-repository.js';
 import BadRequestError from '../../../errors/bad-request-error.js';
 const routes = (fastify, opts, next) => {
-    fastify.get(
+    fastify.post(
         '/add-cart',
         {
-            preValidation: [fastify.authenticatebackofficeuser],
+            preValidation: [fastify.authenticatefoodappuser],
             schema: { ...swaggerAddCartSpec, body: addCartValidator },
             attachValidation: true,
             validatorCompiler: ({ schema }) => {
@@ -31,7 +31,7 @@ const routes = (fastify, opts, next) => {
             item: itemId,
             quantity: quantity,
         };
-        await cartRepository.save(params);
+        await cartRepository.create(params);
         res.send({ success: true });
     }
 };

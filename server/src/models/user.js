@@ -1,15 +1,15 @@
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 const userSchema = new Schema(
-  {
-    email: {
-      type: String,
+    {
+        email: {
+            type: String,
+        },
+        password: {
+            type: String,
+            select: false,
+        },
     },
-    password: {
-      type: String,
-      select: false,
-    },
-  },
-  { timestamps: true }
+    { timestamps: true }
 );
 export { userSchema };

@@ -3,6 +3,7 @@ const initialState = {
   login: false,
   error: '',
 };
+
 const loginReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'LOGIN_REQUEST':

@@ -1,23 +1,20 @@
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 const menuItemSchema = new Schema(
-  {
-    itemName: {
-      type: String,
+    {
+        itemName: {
+            type: String,
+        },
+        imageUrl: {
+            type: String,
+        },
+        price: {
+            type: Number,
+        },
+        totalQuantity: {
+            type: Number,
+        },
     },
-    imageUrl: {
-      type: String,
-    },
-    price: {
-      type: Number,
-    },
-    offerPrice: {
-      type: Number,
-    },
-    totalQuantity: {
-      type: Number,
-    },
-  },
-  { timestamps: true }
+    { timestamps: true }
 );
 export { menuItemSchema };

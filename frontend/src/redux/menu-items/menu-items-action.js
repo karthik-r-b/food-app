@@ -3,21 +3,23 @@ import {
   MENU_ITEMS_SUCCESS,
   MENU_ITEMS_FAILURE,
 } from './menu-items-types';
-// import { baseAPIUrl } from '../../config';
-// import axios from 'axios';
-import menuItems from '../../assets/mock-response/menu-items.json';
+import { baseAPIUrl } from '../../config';
+import axios from 'axios';
+// import menuItems from '../../assets/mock-response/menu-items.json';
 export const menuItem = () => {
   return (dispatch) => {
-    // dispatch(menuItemsRequest());
-    dispatch(menuItemsSuccess(menuItems));
-    // axios
-    //   .get(`${baseAPIUrl}/menu/items`)
-    //   .then((response) => {
-    //     // dispatch(menuItemsSuccess(response.data));
-    //   })
-    //   .catch((error) => {
-    //     dispatch(menuItemsFailure(error));
-    //   });
+    axios.defaults.headers.common.Authorization = `Bearer ${localStorage.getItem(
+      'jwtToken'
+    )}`;
+    dispatch(menuItemsRequest());
+    axios
+      .get(`${baseAPIUrl}/menu-item/`)
+      .then((response) => {
+        dispatch(menuItemsSuccess(response.data));
+      })
+      .catch((error) => {
+        dispatch(menuItemsFailure(error));
+      });
   };
 };
 
